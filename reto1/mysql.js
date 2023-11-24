@@ -5,7 +5,7 @@ async function main() {
     let connection = await mysql.createConnection({
       host: "localhost",
       user: "root",
-      password: "OctavianNBA2004",
+      password: "Codenotch1232",
       database: "5.1",
     });
     console.log("Conexión exitosa a la base de datos");
