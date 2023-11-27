@@ -81,6 +81,8 @@ async function main() {
 
     // Obtén el número total de alumnos por asignatura, el nombre de la asignatura y el nombre y apellidos del profesor que la imparte
 
+    // let sql = "SELECT COUNT(s.student_id) estudiantes, sub.title, t.first_name, t.last_name FROM students s JOIN subject_teacher st ON st.group_id = s.group_id JOIN subjects sub ON sub.subject_id = st.subject_id JOIN teachers t ON t.teacher_id = st.teacher_id GROUP BY sub.title, t.first_name, t.last_name;";
+
     connection.query(sql, params, function (err, result) {
       if (err) throw err;
       else {
